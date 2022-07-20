@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,p{
+            border: 1px solid;
+        }
+        .marg{
+            margin: 50px 20px 30px 70px ;
+
+        }
+            .padd{
+            padding: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div>Test</div>
+    <div class="marg">Margin
+        <p>Margin => from border to other content </p>
+        <p class="marg-4side">Margin => from border to other content </p>
+        <p class="marg-2side">Margin => top-bottom left-right </p>
+        <p class="marg-3side">Margin =>top right-left bottom; </p>
+        <p class="marg-left-right-top-bottom">Margin =>top marg-left-right-top-bottom; </p>
+    </div>
+    <div class="padd">
+        Padding
+        <p>Padding => inside space from border to content</p>
+    </div>
+
+</body>
+</html>

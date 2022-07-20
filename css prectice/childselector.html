@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul.menu li a {
+            text-decoration: none;
+        }
+        .myclass>a {
+            text-decoration: none;
+        }
+        h1+p{
+            color: teal;
+        }
+        h1::before{
+            content: "!~";
+        }
+        h1::after{
+            content: "~!";
+        }
+        p::first-letter{
+            font-size: 40px;
+        }
+        p::first-line{
+            color: rgb(219, 55, 55);
+        }
+        p::selection{
+            background-color: rgb(1, 225, 255);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+    </ul>
+    <ul class="menu">
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+    </ul>
+   
+    <ul>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+    </ul>
+    <div class="myclass">
+        <div>
+            <a href="#">Something</a>
+        </div>
+        <a href="#">Some</a>
+    </div>
+    <h1>Website Title</h1>
+    <p>Something</p>
+    <h1>website</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo soluta mollitia 
+        laborum distinctio, ea expedita aspernatur
+         quia quae aliquid repellendus provident maiores dolores alias atque rem laudantium officiis animi blanditiis.</p>
+
+
+</body>
+</html>

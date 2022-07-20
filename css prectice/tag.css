@@ -1,0 +1,46 @@
+
+        
+
+        p{
+            color: blue;
+        }
+        #idselector{
+            color: rgb(12, 211, 62);
+        }
+        
+        .any
+        {
+            color: blueviolet;
+        }
+        ul.menu li a {
+            text-decoration: none;
+        }
+        .cust-class>a
+        {
+            text-decoration:none;
+        }
+        h1+p
+        {
+            color: pink;
+        }
+        h1~p
+           {
+               color: rgb(46, 3, 31);
+           }
+
+        h1,p,label
+        {
+            color:black;
+        }
+        ul li
+        {
+            color: rgb(252, 8, 8);
+        }
+        .bg-attach
+        {  
+            background-image:url(../../Desktop/cute.jpg);
+            height:500px;
+            width: 50%;
+            background-color: rgb(252, 16, 134);
+        }
+       

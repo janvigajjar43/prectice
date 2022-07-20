@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .row{
+            display: flex;
+        }
+        nav ul li{
+            display: inline-block;
+        }
+        nav ul li:hover{
+            background-color: #163f5f;
+        }
+        .main-header{
+            background-color: #2a5d84;
+            line-height: 60px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+        .main-header a{
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .container{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .ml-a{
+            margin-left: auto;
+        }
+        .search input{
+            padding: 7px;
+        }
+
+       
+
+        div[class*="box"] {
+            height: 200px;
+            width: 200px;
+        }
+
+        .box-1 {
+            margin-left: 20px;
+            margin-top: 20px;
+            background-color: aqua;
+        }
+
+        .box-2 {
+            margin-left: 40px;
+            margin-top: 40px;
+            background-color: rgb(13, 99, 99);
+        }
+
+        .box-3 {
+            margin-left: 80px;
+            margin-top: 80px;
+            background-color: rgb(22, 7, 81);
+        }
+        
+        .box-4 {
+            margin-left: 100px;
+            margin-top: 100px;
+            height: 1200px !important;
+            background-color: rgb(51, 116, 2);
+        }
+        
+        .box-5 {
+            margin-left: 150px;
+            margin-top: 150px;
+            height: 1000px !important;
+            background-color: rgb(236, 240, 22);
+        }
+        .posi-st{
+            position: sticky;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="main-header">
+        <div class="container">
+            <div class="row">
+    
+                <div class="logo">
+                    <a href="#">Apache Friends</a>
+                </div>
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Download</a></li>
+                            <li><a href="#">Add-ons</a></li>
+                            <li><a href="#">Hosting</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="search ml-a">
+                    <input type="text" placeholder="Serach..." name="" id="">
+                </div>
+                <div class="land ml-a">
+                    <a href="">EN</a>
+                </div>
+            </div>
+        </div>
+    </header>
+<section>
+    <div class="box-1">
+        
+    </div>
+    <div class="box-2"></div>
+    <div class="box-3"></div>
+    <div class="box-4">
+        <div>
+            Box 4
+        </div>
+        <div class="posi-st">
+            <a href="#" target="_top">Top</a></div>
+        </div>
+    <div class="box-5"></div>
+
+</section>
+</body>
+</html>q

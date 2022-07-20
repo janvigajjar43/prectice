@@ -1,0 +1,50 @@
+div[class*="box"]{
+    height: 300px;
+    width: 350px;
+    position: absolute;
+}
+.box-1 {
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: aqua;
+}
+.box-2{
+    margin-left: 40px;
+    margin-top: 40px;
+    background-color: rgb(60, 60, 133);
+}
+.box-3{
+    margin-left: 80px;
+    margin-top: 80px;
+    background-color: rgb(3, 32, 13);
+}
+.box-4{
+    margin-left: 100px;
+    margin-top: 100px;
+    background-color: rgb(68, 26, 2);
+}
+.box-5{
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: rgb(109, 231, 150);
+}
+.box-6{
+    margin-left: 140px;
+    margin-top: 140px;
+    background-color: rgb(51, 136, 17);
+}
+.box-7{
+    margin-left: 180px;
+    margin-top: 180px;
+    background-color: rgb(6, 134, 134);
+ }
+.box-8{
+     margin-left: 200px;
+     margin-top: 200px;
+     background-color: rgb(41, 107, 63);
+}
+.box-9{
+     margin-left:220px;
+    margin-top: 220px;
+    background-color: rgb(92, 160, 114);
+}

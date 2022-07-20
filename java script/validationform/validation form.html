@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation form</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>User Name :</td>
+            <td><input type="text" onblur="checkreq(this,'usernameError')"  id="Username"  placeholder="Username" required>
+                <span id="usernameError"></span></td>
+        </tr>
+        <tr>
+            <td>Password :</td>
+            <td><input type="password" onblur="checkreq(this,'passeordError')" id="password" value="" placeholder="******" required>
+                <span id="passeordError"></span></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" name="email" onblur="checkreq(this,'emailError')" id="email" placeholder="*****@gmail.com" autocomplete="email" required="">
+                <span id="emailError"></span></td>
+        </tr>
+        <tr>
+            <td>Mobile :</td>
+            <td><input type="text" onblur="checkreq(this,'mobileError')" id="" value="" placeholder="91+*******" required>
+                <span id="mobileError"></span></td>
+        </tr>
+
+        <tr>
+            <td><input type="submit"  id="submit" value="Submit" placeholder="Submit" required>
+                </td>
+        </tr>
+    </table>
+    <script src="./validation form.js"></script>
+</body>
+
+</html>

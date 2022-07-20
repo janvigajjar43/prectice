@@ -1,0 +1,174 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:active {
+            color: orangered;
+        }
+
+        a:link {
+            color: rgb(4, 144, 147);
+        }
+
+        a:any-link {
+            color: rgb(123, 4, 147);
+        }
+
+        a:visited {
+            color: rgb(209, 103, 23);
+        }
+
+
+
+        input {
+            border: 3px solid grey;
+            border-radius: 3px;
+        }
+
+        input:autofill {
+            border: 3px solid blue;
+        }
+
+        input:-webkit-autofill {
+            border: 3px solid blue;
+        }
+
+        textarea:blank {
+            border: 3px solid red;
+        }
+
+        :checked {
+            margin-left: 25px;
+            border: 1px solid blue;
+        }
+
+        input:default {
+            box-shadow: 0 0 2px 1px coral;
+        }
+
+        input:default+label {
+            color: coral;
+        }
+
+        input:disabled {
+            background: #ccc;
+        }
+
+        .box {
+            background: pink;
+            height: 80px;
+            width: 80px;
+        }
+
+        .box:empty {
+            background: lime;
+        }
+
+        input:enabled {
+            color: blue;
+        }
+
+        @page :first {
+            margin-left: 50%;
+            margin-top: 50%;
+        }
+
+        p {
+            page-break-after: always;
+        }
+
+        p:first-child {
+            color: lime;
+            background-color: black;
+            padding: 5px;
+        }
+        a:hover{
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="#">click me</a>
+    <a href="http://www.golmal.com">click me</a>
+    <a href="http://www.google.com">click me</a>
+    <form method="post" action="">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" autocomplete="email" required>
+        <textarea></textarea>
+        <div>
+            <input type="radio" name="my-input" id="yes">
+            <label for="yes">Yes</label>
+
+            <input type="radio" name="my-input" id="no">
+            <label for="no">No</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="my-checkbox" id="opt-in">
+            <label for="opt-in">Check me!</label>
+        </div>
+
+        <select name="my-select" id="fruit">
+            <option value="opt1">Apples</option>
+            <option value="opt2">Grapes</option>
+            <option value="opt3">Pears</option>
+        </select>
+        <input type="submit" name="btn" id="btn">
+    </form>
+
+    <fieldset>
+        <legend>Favorite season</legend>
+
+        <input type="radio" name="season" id="spring">
+        <label for="spring">Spring</label>
+
+        <input type="radio" name="season" id="summer" checked>
+        <label for="summer">Summer</label>
+
+        <input type="radio" name="season" id="fall">
+        <label for="fall">Fall</label>
+
+        <input type="radio" name="season" id="winter">
+        <label for="winter">Winter</label>
+
+
+        <input type="text" placeholder="Name" disabled>
+        <input type="text" placeholder="Address" disabled>
+        <input type="text" placeholder="Zip Code" disabled>
+    </fieldset>
+
+    <div class="box">
+        <!-- I will be lime. -->
+    </div>
+    <div class="box">I will be pink.</div>
+    <div class="box">
+        <!-- I will be pink in older browsers because of the whitespace around this comment. -->
+    </div>
+    <div class="box">
+        <p>
+            <!-- I will be pink in all browsers because of the non-collapsible whitespace and elements around this comment. -->
+        </p>
+    </div>
+
+    <div>
+        <p>This text is selected!</p>
+        <p>This text isn't selected.</p>
+    </div>
+
+    <div>
+        <h2>This text isn't selected: it's not a `p`.</h2>
+        <p>This text isn't selected.</p>
+    </div>
+    <script>
+        document.querySelector("button").addEventListener('click', () => {
+            window.print();
+        });
+    </script>
+</body>
+</html>

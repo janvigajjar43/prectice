@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>background</title>
+    <style>
+        .bg-attach{
+            background-image: url(../cute.jpg);
+            border: 20px solid  rgb(14, 12, 12);
+            /* background-clip: border-box; */
+            background-clip: content-box;
+            /* background-clip: padding-box; */
+            padding: 50px;
+            background-position: 50% 20%;
+            background-repeat: repeat-x;
+            background-size: cover;
+        }
+        .height-500{
+            height: 500px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="height-500"></div>
+    <div class="height-500 bg-attach"></div>
+    <div class="height-500"></div>
+</body>
+</html>
